@@ -314,13 +314,13 @@
                   </li>
                   {% if speaker.twitter_handle %}
                   <li class="col g-brd-right g-brd-gray-light-v4">
-                    <a class="u-icon-v1 u-icon-size--sm g-color-primary g-bg-transparent g-color-yellow--hover" data-toggle="tooltip" data-placement="bottom" title="Connect with {{ speaker.name }}" target="_blank" href="https://www.twitter.com/{{ speaker.twitter_handle }}">
+                    <a class="u-icon-v1 u-icon-size--sm g-color-primary g-bg-transparent g-color-yellow--hover" data-toggle="tooltip" data-placement="bottom" title="Connect with {{ speaker.name }}" target="_blank" rel="noopener noreferrer" href="https://www.twitter.com/{{ speaker.twitter_handle }}">
                       <i class="icon-social-twitter"></i>
                     </a>
                   </li>
                   {% else %}
                   <li class="col g-brd-right g-brd-gray-light-v4">
-                    <a class="u-icon-v1 u-icon-size--sm g-color-primary g-bg-transparent g-color-yellow--hover" data-toggle="tooltip" data-placement="bottom" title="Connect with {{ speaker.name }}" target="_blank" href="{{ speaker.linkedin }}">
+                    <a class="u-icon-v1 u-icon-size--sm g-color-primary g-bg-transparent g-color-yellow--hover" data-toggle="tooltip" data-placement="bottom" title="Connect with {{ speaker.name }}" target="_blank" rel="noopener noreferrer" href="{{ speaker.linkedin }}">
                       <i class="icon-social-linkedin"></i>
                     </a>
                   </li>
