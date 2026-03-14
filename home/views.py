@@ -13,7 +13,9 @@ from .models import EventYear
 from fin_aid.models import Fin_aid
 
 def get_fin_aid_status(year):
-    event_year = get_object_or_404(EventYear, year=year)
+    event_year = EventYear.objects.filter(year=year).first()
+    if not event_year:
+        return []
     fin_aids = Fin_aid.objects.filter(event_year=event_year).order_by('-date_created')
     fin_aid_status = []
 
